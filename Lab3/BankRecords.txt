@@ -1,0 +1,35 @@
+
+
+Data Analytics Results:
+
+Innercity Region average income is: $27752.87
+Rural Region average income is: $30027.61
+Suburban Region average income is: $28656.36
+Town Region average income is: $26802.19
+
+
+Innercity Region maximum income is: $266222.8
+Rural Region maximum income is: $57398.1
+Suburban Region maximum income is: $63130.1
+Town Region maximum income is: $59803.9
+
+
+Innercity Region minimum income is: $6294.21
+Rural Region minimum income is: $8639.24
+Suburban region minimum income is: $8143.75
+Town Region minimum income is: $5014.21
+
+
+Innercity Females count with both a mortgage and savings account is: 31
+Rural Females count with both a mortgage and savings account is: 9
+Suburban Females count with both a mortgage and savings account is: 4
+Town Females count with both a mortgage and savings account is: 27
+
+
+Innercity Region Males count with both a car and 1 child is: 15
+Rural Region Males count with both a car and 1 child is: 9
+Suburban Region Males count with both a car and 1 child is: 3
+Town Region Males count with both a car and 1 child is: 7
+
+DATED = 2017/10/22 19:14:19
+Programmed by Vighnesh Sanjay Sawant

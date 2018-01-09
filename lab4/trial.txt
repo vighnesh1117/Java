@@ -1,0 +1,52 @@
+/*package controller; // creating a package controller
+import java.sql.*;
+import java.text.*;
+import java.util.*; // importing all utilities function  
+import lab4test.BankRecord; //importing class BankRecord from Lab4test
+import models.DaoModel; //importing class DaoModel from package models
+import views.LoanView; //importing class LoanView from package views
+
+
+
+public class LoanController extends BankRecord  //declaring class Loan Controller which extends class BankRecord having control on both class daoModel and loanView. this class consists of method read data and process data from the class BankRecord which reads the data from bank-details.csv file and processes data from this csv file. Also this class instantiates loanView object  
+{
+
+//start of main method
+	public static void main(String[] args) 
+	{
+		//documentation
+		String timeStamp = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(Calendar.getInstance().getTime()); //using SimpleDateFormat class to get the current instance of date and time and using a proper format to display it
+		System.out.println("\nDATED = " + timeStamp + "\nProgrammed by Vighnesh Sanjay Sawant\n"); // displaying the current instance of data and time
+
+		DaoModel dm = new DaoModel(); //creating new object of daoModel class
+		LoanController controller = new LoanController(); //creating new object of loanController
+		controller.readData(); //calling the readData method of BankRecord class
+		controller.processData(); //calling the processData method of BankRecord class
+//implementing try catch block
+		try 
+		{
+			System.out.println("thread in blocked state or waiting state and sleeping for 5 seconds!");
+			for (int j = 1; j < 6; j++) //for loop to make the thread sleep for 5 seconds 
+			{
+				System.out.println(j);
+				Thread.sleep(j); //to make the thread sleep
+			}
+			System.out.println("thread awake!");
+		    dm.createTable(); //calling the create table method 
+			dm.insertData(robj); // calling the insertData method
+			new LoanView(); // instantiating class LoanView
+		} 
+		//end of try block
+		
+		catch (SQLException e) 
+		{
+			System.out.println("the SQL exception occured is: "+e);
+		}
+		catch (Exception e) 
+		{
+			System.out.println("the other exception occured is: "+e);
+		}	
+		} // end of method
+}// end of class
+
+*/

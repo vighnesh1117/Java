@@ -1,0 +1,187 @@
+/*public static void LoanCntroller()
+
+	{
+		
+		long strt_time;
+		long e_time;
+		
+		//The objects BankRecds is created 
+		BankRecord bd = new BankRecord(); 
+		
+		//Method is being called
+		bd.readData();
+		
+		//Two objects of Mapper1 class are being created
+		Mapper1 al_map= new Mapper1();
+		Mapper1 BankRecord = new Mapper1();
+		
+		//The mapper date is been encapsulated
+		al_map.al_dt = new Date();
+		
+		//For the bankrecords, hash map is called
+		al_map.hmap = new HashMap<String, BankRecord>();
+		
+		System.out.println("Hash Mapping start timing is "+(new Date().toString()));
+		System.out.println("");
+		
+		for (int i = 0; i <robj.length; i++)
+		
+		{
+			//The hash map is created for bank records
+			al_map.hmap.put(robj[i].getId(), robj[i]);
+		
+		}
+		
+		System.out.println("Hash Mapping end timing is "+(new Date().toString()));
+		System.out.println("");
+		
+		strt_time = System.currentTimeMillis(); //The time is stored here before serialization takes place
+		
+		FileOutputStream al_FileIs = null;
+		
+		System.out.println("Starting the serialization");
+		System.out.println("Serialization start timing is "+(new Date().toString()));
+		
+		try {
+		
+			al_FileIs = new FileOutputStream("bankrecords.ser"); //Serialization file is created
+			
+			try
+			
+			{
+				
+				ObjectOutputStream al_objOStream = new ObjectOutputStream(al_FileIs);
+				al_objOStream.writeObject(al_map); //File Hash map is written in the file serialization
+				al_FileIs.close();
+				al_objOStream.close();
+			
+			} 
+			
+			catch (IOException e) 
+			
+			{
+				
+				System.out.println("Inserting the hash map in serialize file is not possible");
+				e.printStackTrace();
+				
+			}
+			
+		} 
+		
+			catch (FileNotFoundException e)
+		
+			{	
+			
+				System.out.println("File Bankrecords.ser has not been created");
+		
+			}
+		
+				System.out.println("Completion of the serialization done");
+				System.out.println("");
+		
+				System.out.println("Application before the sleeping time is " + new Date());
+		try
+		
+		 {
+		
+			 Thread.sleep(5000);
+			
+		} 
+		
+		catch (InterruptedException en) 
+
+		 {
+			
+			 System.out.println("There is a problem in the thread function");
+		en.printStackTrace();
+		
+		 }
+		
+		 System.out.println("Application after the sleeping time is " + new Date());
+		 System.out.println("");
+		
+		 System.out.println("Starting of deserialization");
+		
+		try
+
+		{
+		
+			FileInputStream al_fileInp = new FileInputStream("bankrecords.ser");
+			
+			try
+			
+			{
+			
+				ObjectInputStream al_objInput = new ObjectInputStream(al_fileInp);
+				
+				try
+				{
+					 Mapper1 newBankRecord = (Mapper1)al_objInput.readObject();
+					al_objInput.close();
+					al_fileInp.close();
+				} 
+				
+				catch (ClassNotFoundException el) 
+				
+				{
+			
+					System.out.println("Not able to read from serialized file");
+					el.printStackTrace();
+			
+				}
+			} 
+			
+			catch (IOException el) 
+			
+			{
+				
+				System.out.println("There is a problem with the ObjectInputStream object ");
+				el.printStackTrace();
+			
+			}
+			
+		} 
+		
+		catch (FileNotFoundException en) 
+		
+		{
+			
+			System.out.println("File Bankrecords.ser is not found for reading");
+			en.printStackTrace();
+		
+		}
+		
+		e_time = System.currentTimeMillis();
+		
+				
+		System.out.println("Deserialization has been completed "+(new Date().toString()));
+		System.out.println("");
+		System.out.println("The difference of time between serialization and deserialization in milliseconds is "+(e_time-strt_time));
+		System.out.println("");
+		
+		//The object for the class daoModelr1 is being created
+		DaoModel dred_mod = new DaoModel();
+		
+		try
+		
+		{
+			dred_mod.createTable();
+			dred_mod.insertData(robj);
+			dred_mod.getResultSet();
+		
+		new LoanView();
+		
+		}
+	catch(Exception el)
+		
+		{
+		
+		System.out.println("There is a problem with the CRUDE function");
+		el.printStackTrace();
+		
+		}}
+	public static void main(String[] args) {
+		LoanController LL=new LoanController();
+		LL.LoanCntroller();
+	}}
+*/
